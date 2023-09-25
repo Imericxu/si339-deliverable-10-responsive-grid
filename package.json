@@ -1,0 +1,17 @@
+{
+  "name": "si339-deliverable-10-responsive-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.4.30",
+    "prettier": "^3.0.3",
+    "prettier-plugin-css-order": "^2.0.0",
+    "prettier-plugin-organize-attributes": "^1.0.0"
+  }
+}
