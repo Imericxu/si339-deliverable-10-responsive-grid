@@ -1,8 +1,8 @@
-/* 
+/*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
@@ -75,13 +75,13 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
+  margin: 0;
+  outline: 0;
+  border: 0;
   background: transparent;
+  padding: 0;
+  font-size: 100%;
 }
 
 body {
@@ -120,11 +120,11 @@ q:after {
 }
 
 a {
+  vertical-align: baseline;
   margin: 0;
+  background: transparent;
   padding: 0;
   font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
 }
 
 /* change colours to suit your needs */
@@ -148,8 +148,8 @@ del {
 
 abbr[title],
 dfn[title] {
-  border-bottom: 1px dotted;
   cursor: help;
+  border-bottom: 1px dotted;
 }
 
 table {
@@ -160,11 +160,11 @@ table {
 /* change border colour to suit your needs */
 hr {
   display: block;
-  height: 1px;
+  margin: 1em 0;
   border: 0;
   border-top: 1px solid #dc9292;
-  margin: 1em 0;
   padding: 0;
+  height: 1px;
 }
 
 input,

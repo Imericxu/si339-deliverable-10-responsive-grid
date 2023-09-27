@@ -11,11 +11,11 @@ body {
 }
 
 .overview {
-  background-position: center; /* Parallax effect */
-  background-size: cover; /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-attachment: fixed; /* Parallax effect */
-  height: 400px; /* Parallax effect */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 400px;
   color: white;
 }
 
@@ -79,12 +79,15 @@ footer {
 
 @media screen and (prefers-reduced-motion: reduce) {
   html {
-    scroll-behavior: auto; /* Removes scroll animation */
+    /* Removes scroll animation */
+    scroll-behavior: auto;
   }
 
   .skip a {
-    -webkit-transition: none; /* sets to default setting */
-    transition: none; /* sets to default setting */
+    /* sets to default setting */
+    -webkit-transition: none;
+    /* sets to default setting */
+    transition: none;
   }
 
   /*Turn off parallax*/
@@ -98,12 +101,14 @@ footer {
 
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
+
 nav a:hover,
 nav a:focus {
   text-decoration: underline;
 }
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
+
 .skip {
   position: relative;
 }
@@ -114,11 +119,13 @@ nav a:focus {
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+
 .skip a:focus {
   top: 20px;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
+
 *:focus {
   border: solid 2px;
   /* outline makes for sense but since the directions ask for border */
@@ -126,6 +133,7 @@ nav a:focus {
 }
 
 /* Step 4: Write selector/rule property to style the container */
+
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -136,8 +144,9 @@ nav a:focus {
   width: 100%;
 }
 
-/* Step 5: Write selector/rule property to add the background image to the 
+/* Step 5: Write selector/rule property to add the background image to the
 first div in the grid and place it in the grid. */
+
 .container div:first-child {
   grid-column: 1 / -1;
   background-image: url("../images/header.jpg");
@@ -147,6 +156,7 @@ first div in the grid and place it in the grid. */
 /* Steps 6 and 7: Write the selector/rule properties to add place the next elements in the next four rows in the grid. */
 
 /*This will be a lot of rules.... but be strategic and combine seletors*/
+
 .about {
   grid-area: 2 / 2;
 }
@@ -189,6 +199,7 @@ first div in the grid and place it in the grid. */
 }
 
 /* Step 8: Write the selector/rule property to style the .text-block class. */
+
 .text-block {
   margin: auto;
   max-height: 250px;
@@ -197,20 +208,24 @@ first div in the grid and place it in the grid. */
 }
 
 /* Add your media query here */
+
 @media screen and (min-width: 800px) {
   /* Step 9: Write the selector/rule property to style the nav element */
+
   nav {
     padding: 30px 0;
     text-align: right;
   }
 
   /* Step 10: Write the selector/rule property to update the .container class */
+
   .container {
     display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
   }
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
+
   .about,
   .clients,
   .method-image,
