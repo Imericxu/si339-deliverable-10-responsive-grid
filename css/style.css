@@ -110,9 +110,9 @@ nav a:focus {
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 
 /* They wanted a to be positioned relative to parent element but I don't think they're checking for that */
-/* .skip {
+.skip {
   position: relative;
-} */
+}
 
 .skip a {
   position: absolute;
